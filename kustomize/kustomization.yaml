@@ -7,7 +7,7 @@ kind: Kustomization
 # Also specific annotations are added for later identification
 namespace: game-2048
 commonAnnotations:
-  provider: kubernetes-sample-apps
+  provider: infratron
 
 # 2048 game resources (namespace, services, deployments, etc)
 resources:

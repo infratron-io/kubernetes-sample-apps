@@ -15,10 +15,11 @@ spec:
       labels:
         app: game-2048
     spec:
+      serviceAccountName: regcred
       containers:
         - name: backend
           # Replace the `<>` placeholders with your docker registry info
-          image: eu-docker.pkg.dev/infratron-development/sample-apps/2048-game:latest
+          image: europe-west4-docker.pkg.dev/development-infratron/infratron/2048-game:latest
           ports:
             - name: http
               containerPort: 8080
